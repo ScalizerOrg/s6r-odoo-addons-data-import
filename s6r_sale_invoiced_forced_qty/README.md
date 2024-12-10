@@ -1,7 +1,8 @@
-CGF - CRM Team
+S6R Sale Order Invoiced Forced Qty
 ===============
 
-This module uses CRM team membership to restrict user access to Sale Orders, Projects and Analytic Accounts.
+This module allows to force the invoiced quantity on Sale Orders,
+it is useful in customer data import scenarios where the historical invoices are not imported.
 
 
 ## Usage
