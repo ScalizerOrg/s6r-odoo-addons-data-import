@@ -9,7 +9,8 @@
                     <field name="qty_invoiced_forced"
                            string="Billed Forced"
                            column_invisible="parent.state not in ('purchase', 'done')"
-                           optional="hide"/>
+                           optional="hide"
+                           groups="base.group_system"/>
                 </xpath>
             </field>
         </record>
