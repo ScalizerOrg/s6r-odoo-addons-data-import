@@ -15,4 +15,5 @@ class PurchaseOrderLine(models.Model):
         super()._compute_qty_invoiced()
         for line in self:
             line.qty_invoiced += line.qty_invoiced_forced
+            line.qty_to_invoice -= line.qty_invoiced_forced
         return
