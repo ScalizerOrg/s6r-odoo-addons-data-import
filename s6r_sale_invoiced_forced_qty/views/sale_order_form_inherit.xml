@@ -13,6 +13,13 @@
                            column_invisible="parent.state != 'sale'"
                            optional="hide"
                            groups="base.group_system"/>
+                    <field name="untaxed_amount_invoiced_forced"
+                           decoration-info="(not display_type and invoice_status == 'to invoice')"
+                           decoration-bf="(not display_type and invoice_status == 'to invoice')"
+                           string="Amount Invoiced Forced"
+                           column_invisible="parent.state != 'sale'"
+                           optional="hide"
+                           groups="base.group_system"/>
                 </xpath>
             </field>
         </record>
