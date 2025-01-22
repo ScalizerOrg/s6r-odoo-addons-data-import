@@ -9,14 +9,14 @@
                     <field name="qty_invoiced_forced"
                            decoration-info="(not display_type and invoice_status == 'to invoice')"
                            decoration-bf="(not display_type and invoice_status == 'to invoice')"
-                           string="Invoiced Forced"
+                           string="Invoiced Qty (forced)"
                            column_invisible="parent.state != 'sale'"
                            optional="hide"
                            groups="base.group_system"/>
                     <field name="untaxed_amount_invoiced_forced"
                            decoration-info="(not display_type and invoice_status == 'to invoice')"
                            decoration-bf="(not display_type and invoice_status == 'to invoice')"
-                           string="Amount Invoiced Forced"
+                           string="Invoiced Amount (forced)"
                            column_invisible="parent.state != 'sale'"
                            optional="hide"
                            groups="base.group_system"/>
