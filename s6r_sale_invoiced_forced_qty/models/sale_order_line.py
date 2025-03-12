@@ -7,13 +7,16 @@ class SaleOrderLine(models.Model):
     qty_invoiced_forced = fields.Float(
         string="Forced Invoiced Quantity",
         help= "Qty already invoiced but not related to existing invoices in Odoo (for history data import purposes)",
-        digits='Product Unit of Measure')
+        digits='Product Unit of Measure',
+        copy=False,
+    )
 
     untaxed_amount_invoiced_forced = fields.Monetary(
         string="Forced Invoiced Amount",
         help="Amount already invoiced but not related to existing invoices in Odoo (for history data import purposes).\
         If this field is left blank, the pre-existing amount will not be taken in consideration when calculating the \
-        total invoiced amount for the sale order. Therefore, reports relating to this sale order will be false."
+        total invoiced amount for the sale order. Therefore, reports relating to this sale order will be false.",
+        copy=False,
     )
 
     @api.depends('qty_invoiced_forced')
