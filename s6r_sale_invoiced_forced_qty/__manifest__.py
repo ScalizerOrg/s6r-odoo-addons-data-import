@@ -24,7 +24,7 @@ it is useful in customer data import scenarios where the historical invoices are
     'images': [
     ],
     'data': [
-        'views/sale_order_form_inherit.xml',
+        'views/sale_order_views.xml',
         'security/ir.model.access.csv',
     ],
     'auto_install': False,
