@@ -2,7 +2,7 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
     'name': 'S6R Sale Order Invoiced Forced Qty',
-    'version': '17.0.1.0.2',
+    'version': '17.0.1.0.3',
     'author': 'Scalizer',
     'website': 'https://www.scalizer.fr',
     'summary': "This module allows to force the invoiced quantity on Sale Orders",
@@ -24,7 +24,7 @@ it is useful in customer data import scenarios where the historical invoices are
     'images': [
     ],
     'data': [
-        'views/sale_order_form_inherit.xml',
+        'views/sale_order_views.xml',
         'security/ir.model.access.csv',
     ],
     'auto_install': False,

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-22 10:26+0000\n"
-"PO-Revision-Date: 2025-01-22 10:26+0000\n"
+"POT-Creation-Date: 2025-03-12 12:43+0000\n"
+"PO-Revision-Date: 2025-03-12 12:43+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,9 @@ msgid ""
 "existing amount will not be taken in consideration when calculating the"
 "         total invoiced amount for the sale order. Therefore, reports "
 "relating to this sale order will be false."
-msgstr ""
+msgstr "Montant déjà facturé mais non lié à des factures existantes dans Odoo (pour l'import de données historiques)."
+"Si ce champ est laissé vide, le montant pré-existant ne sera pas pris en considération lors du calcul du"
+"montant total facturé pour la commande. Par conséquent, les rapports relatifs à cette commande seront faux."
 
 #. module: s6r_sale_invoiced_forced_qty
 #: model:ir.model.fields,field_description:s6r_sale_invoiced_forced_qty.field_sale_order_line__untaxed_amount_invoiced_forced
@@ -36,12 +38,12 @@ msgid "Forced Invoiced Quantity"
 msgstr "Quantité facturée (forcée)"
 
 #. module: s6r_sale_invoiced_forced_qty
-#: model_terms:ir.ui.view,arch_db:s6r_sale_invoiced_forced_qty.sale_order_form_inherit
+#: model_terms:ir.ui.view,arch_db:s6r_sale_invoiced_forced_qty.sale_order_form_inherit_s6r
 msgid "Invoiced Amount (forced)"
 msgstr "Montant facturé (forcé)"
 
 #. module: s6r_sale_invoiced_forced_qty
-#: model_terms:ir.ui.view,arch_db:s6r_sale_invoiced_forced_qty.sale_order_form_inherit
+#: model_terms:ir.ui.view,arch_db:s6r_sale_invoiced_forced_qty.sale_order_form_inherit_s6r
 msgid "Invoiced Qty (forced)"
 msgstr "Quantité facturée (forcée)"
 

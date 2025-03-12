@@ -16,7 +16,7 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: s6r_purchase_invoiced_forced_qty
-#: model_terms:ir.ui.view,arch_db:s6r_purchase_invoiced_forced_qty.purchase_order_form_inherit
+#: model_terms:ir.ui.view,arch_db:s6r_purchase_invoiced_forced_qty.purchase_order_form_inherit_s6r
 msgid "Billed Forced"
 msgstr "Qté facturée (forcée)"
 
