@@ -21,6 +21,10 @@
                            optional="hide"
                            groups="base.group_system"/>
                 </xpath>
+                <xpath expr="//field[@name='order_line']//field[@name='analytic_distribution']" position="after">
+                    <field name="qty_invoiced_forced" invisible="parent.state != 'sale'"/>
+                    <field name="untaxed_amount_invoiced_forced" invisible="parent.state != 'sale'"/>
+                </xpath>
             </field>
         </record>
 </odoo>
