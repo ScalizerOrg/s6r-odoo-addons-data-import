@@ -17,3 +17,12 @@ class PurchaseOrderLine(models.Model):
         for line in self:
             line.qty_received += line.qty_received_forced
         return
+
+    # when stock moves are created, quantity is computed from already existing stock moves
+    # so we need to adjust this quantity depending on the qty_received_forced field.
+    def _get_qty_procurement(self):
+        qty = super()._get_qty_procurement()
+
+        if self.qty_received_forced:
+            qty += self.qty_received_forced
+        return qty
