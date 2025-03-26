@@ -1,21 +1,21 @@
-# Copyright 2024 Scalizer (<https://www.scalizer.fr>)
+# Copyright 2025 Scalizer (<https://www.scalizer.fr>)
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
-    'name': 'S6R Purchase Order Invoiced Forced Qty',
-    'version': '17.0.1.0.4',
+    'name': 'S6R Purchase Order Line Received Forced Qty',
+    'version': '17.0.1.0.1',
     'author': 'Scalizer',
     'website': 'https://www.scalizer.fr',
-    'summary': "This module allows to force the invoiced quantity on Purchase Orders",
+    'summary': "This module allows to force the received quantity on Purchase Order Lines",
     'sequence': 0,
     'license': 'LGPL-3',
     'depends': [
-        'purchase',
+        'purchase_stock',
     ],
     'category': 'Generic Modules/Scalizer',
     'complexity': 'easy',
     'description': '''
-This module allows to force the invoiced quantity on Purchase Orders,
-it is useful in customer data import scenarios where the historical supplier invoices are not imported.
+This module allows to force the received quantity on Purchase Order Lines,
+it is useful in customer data import scenarios where the historical stock moves are not imported.
     ''',
     'qweb': [
     ],
