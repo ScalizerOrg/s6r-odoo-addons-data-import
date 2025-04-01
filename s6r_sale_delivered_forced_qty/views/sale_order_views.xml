@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="sale_order_form_inherit_s6r" model="ir.ui.view">
+            <field name="name">sale.order.form.inherit.s6r</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='order_line']/tree/field[@name='qty_delivered']" position="after">
+                    <field name="qty_delivered_forced"
+                           string="Delivered Forced"
+                           optional="hide"
+                           groups="base.group_system"/>
+                </xpath>
+            </field>
+        </record>
+</odoo>
