@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="sale_order_form_inherit_s6r" model="ir.ui.view">
+            <field name="name">sale.order.form.inherit.s6r</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='order_line']/list/field[@name='qty_invoiced']" position="before">
+                    <field name="qty_invoiced_forced"
+                           decoration-info="(not display_type and invoice_status == 'to invoice')"
+                           decoration-bf="(not display_type and invoice_status == 'to invoice')"
+                           string="Invoiced Qty (forced)"
+                           column_invisible="parent.state != 'sale'"
+                           optional="hide"
+                           groups="base.group_system"/>
+                    <field name="untaxed_amount_invoiced_forced"
+                           decoration-info="(not display_type and invoice_status == 'to invoice')"
+                           decoration-bf="(not display_type and invoice_status == 'to invoice')"
+                           string="Invoiced Amount (forced)"
+                           column_invisible="parent.state != 'sale'"
+                           optional="hide"
+                           groups="base.group_system"/>
+                </xpath>
+                <xpath expr="//field[@name='order_line']//field[@name='analytic_distribution']" position="after">
+                    <field name="qty_invoiced_forced" invisible="parent.state != 'sale'"/>
+                    <field name="untaxed_amount_invoiced_forced" invisible="parent.state != 'sale'"/>
+                </xpath>
+            </field>
+        </record>
+</odoo>
