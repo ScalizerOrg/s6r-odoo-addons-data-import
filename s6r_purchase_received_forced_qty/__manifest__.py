@@ -2,7 +2,7 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
     'name': 'S6R Purchase Order Line Received Forced Qty',
-    'version': '18.0.1.0.1',
+    'version': '19.0.1.0.0',
     'author': 'Scalizer',
     'website': 'https://www.scalizer.fr',
     'summary': "This module allows to force the received quantity on Purchase Order Lines",

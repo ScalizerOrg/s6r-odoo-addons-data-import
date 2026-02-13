@@ -2,7 +2,7 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
     'name': 'S6R Purchase Order Invoiced Forced Qty',
-    'version': '18.0.1.0.3',
+    'version': '19.0.1.0.0',
     'author': 'Scalizer',
     'website': 'https://www.scalizer.fr',
     'summary': "This module allows to force the invoiced quantity on Purchase Orders",
